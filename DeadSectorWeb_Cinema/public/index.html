@@ -1,0 +1,55 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>Dead Sector V3</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="menu"><div class="panel"><h1>DEAD SECTOR</h1><div class="sub">CO-OP ZOMBIE SURVIVAL</div><input id="name" placeholder="Your name"><input id="room" placeholder="Room code — blank creates lobby"><button id="join">CREATE / JOIN LOBBY</button><div class="controls">WASD move • Mouse look • Click fire • R reload • E interact • Shift sprint<br>Xbox: LS move • RS look • RT fire • X reload • A interact • LB sprint</div><div id="status">Ready</div></div></div>
+<div id="hud">
+ <div id="tl"><b id="round">ROUND 1</b><div id="moneyTop">$500</div><div id="roomLabel"></div><div id="mapName">THE LAST PICTURE HOUSE</div><div id="threats"></div></div>
+ <div id="tr"><button id="copy">COPY FRIEND INVITE</button><div id="players"></div></div>
+ <div id="centerMessage"></div><div id="powerMessage"></div>
+ <div id="bl"><b id="points">500 PTS</b><div class="bar"><div id="hp"></div></div><div class="stamBar"><div id="stam"></div></div><div id="perks"></div></div>
+ <div id="br"><div>AR-15</div><div id="ammo">30 / 180</div><div id="reloadText"></div></div>
+ <div id="prompt"></div><div id="cross">+</div><div id="scopeOverlay"><div id="scopeCircle"><div class="scopeV"></div><div class="scopeH"></div></div></div>
+</div>
+<div id="downed">YOU ARE DOWN — WAIT FOR A TEAMMATE</div>
+<script src="/socket.io/socket.io.js"></script><script type="module" src="app.js"></script>
+<div id="gameOverScreen">
+  <div class="goPanel">
+    <h1>GAME OVER</h1>
+    <div id="goRound"></div>
+    <div id="goScoreboard"></div>
+    <div id="goHostNote"></div>
+    <button id="restartMatch">RESTART MATCH</button>
+    <button id="returnLobby">RETURN TO LOBBY</button>
+  </div>
+</div>
+
+<div id="lobbyScreen">
+  <div class="goPanel lobbyPanel">
+    <h1>DEAD SECTOR</h1>
+    <div class="lobbySub">PRE-GAME LOBBY</div>
+    <div id="lobbyRoom"></div>
+    <button id="lobbyCopy">COPY INVITE LINK</button>
+    <div id="lobbyPlayers"></div>
+    <div id="lobbyHostNote"></div>
+    <button id="startMatch">START MATCH</button>
+  </div>
+</div>
+
+
+<div id="mobileControls">
+  <div id="movePad">
+    <div id="moveBase">
+      <div id="moveStick"></div>
+    </div>
+  </div>
+
+  <div id="lookZone"></div>
+
+  <button id="mFire" class="mobileBtn fireBtn">FIRE</button>
+  <button id="mADS" class="mobileBtn adsBtn">ADS</button>
+  <button id="mReload" class="mobileBtn reloadBtn">R</button>
+  <button id="mInteract" class="mobileBtn interactBtn">USE</button>
+  <button id="mSprint" class="mobileBtn sprintBtn">SPRINT</button><button id="mSwap" class="mobileBtn swapBtn">SWAP</button>
+</div>
+
+</body></html>

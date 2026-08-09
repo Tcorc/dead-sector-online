@@ -1,0 +1,11 @@
+DEAD SECTOR CINEMA CORE FIXES
+
+- Doors are now true choke points. The surrounding wall geometry connects to the doorway,
+  so there is no path around a closed door.
+- Server and client map geometry match.
+- 1 selects weapon slot 1.
+- 2 selects weapon slot 2.
+- Q still swaps weapons.
+- Top-left money HUD now renders the server player's real current point total every state update.
+- Existing lower points display is also kept.
+- Door / perk / Pack-a-Punch interactions remain server-authoritative.

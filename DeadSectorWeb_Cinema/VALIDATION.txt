@@ -1,0 +1,11 @@
+server.js: return=0 
+app.js: return=0 
+door:leftHall: client+server=True
+door:rightHall: client+server=True
+door:stage: client+server=True
+door:backstage: client+server=True
+jug: client+server=True
+speed: client+server=True
+doubletap: client+server=True
+staminup: client+server=True
+pack: client+server=True
