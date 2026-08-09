@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: dead-sector-online
-    runtime: node
-    buildCommand: npm install
-    startCommand: npm start
-    healthCheckPath: /health
