@@ -1,0 +1,7 @@
+server.js: return=0 
+app.js: return=0 
+server_has_astar: True
+server_has_purchase_success: True
+client_has_windows: True
+client_has_stairs: True
+client_has_curtains: True

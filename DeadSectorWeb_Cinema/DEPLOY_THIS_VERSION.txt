@@ -1,0 +1,30 @@
+DEAD SECTOR WEB OVERHAUL
+
+THIS IS A NEW CLEAN FOLDER:
+DeadSectorWeb_Overhaul
+
+MAJOR FIXES:
+1. NEW, MUCH LARGER MAP
+   - 84 x 72 playable shell.
+   - Foyer, auditorium, left/right halls, stage, backstage, projector/control areas.
+   - Client and server use the SAME map geometry.
+
+2. REAL ZOMBIE PATHFINDING
+   - Replaced old room waypoint routing with grid A* pathfinding.
+   - Closed doors are collision.
+   - Opening a door removes that collision and forces every zombie to repath immediately.
+   - Zombies recalculate routes as players move.
+   - Stuck zombies force an early repath.
+
+3. PURCHASES FIXED
+   - Server checks points directly and accepts purchase as soon as points >= cost.
+   - Small floating-point tolerance prevents edge cases.
+   - Door range increased to 3.25 world units.
+   - Doors, perks, ammo, wall buys, Mystery Box, and all 3 weapon-upgrade levels send visible success/denied feedback.
+   - If short, HUD tells you exactly how many more points you need.
+
+RENDER:
+Upload the entire DeadSectorWeb_Overhaul folder to GitHub.
+Root Directory: DeadSectorWeb_Overhaul
+Build Command: npm install
+Start Command: npm start
