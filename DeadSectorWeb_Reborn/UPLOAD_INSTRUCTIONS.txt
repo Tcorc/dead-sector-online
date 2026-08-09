@@ -1,0 +1,18 @@
+DEAD SECTOR WEB — CLEAN REBUILD
+
+NEW FOLDER NAME:
+DeadSectorWeb_Reborn
+
+UPLOAD:
+1. Extract the ZIP on your computer.
+2. Upload the entire DeadSectorWeb_Reborn folder to the MAIN page of your dead-sector-online GitHub repository.
+3. Do not upload the ZIP itself.
+
+RENDER:
+Root Directory: DeadSectorWeb_Reborn
+Build Command: npm install
+Start Command: npm start
+
+Do not point Render at V10, V11, or V12.
+
+This is a fresh uniquely named deployment folder so it will not conflict with the older folders already in GitHub.
