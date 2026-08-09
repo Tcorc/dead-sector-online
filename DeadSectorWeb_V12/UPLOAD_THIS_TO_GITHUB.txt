@@ -1,0 +1,26 @@
+DEAD SECTOR ONLINE - NEW ROOT FILES
+
+IMPORTANT:
+These files are designed to go DIRECTLY in the root of your GitHub repository.
+
+Your GitHub main page should show:
+public/
+package.json
+server.js
+render.yaml
+README.txt
+(and the other project files)
+
+DO NOT upload the outer DeadSectorWeb_v11_NEW_FILES folder as a folder.
+Open it and upload everything INSIDE it.
+
+RENDER SETTINGS:
+Root Directory: LEAVE BLANK
+Build Command: npm install
+Start Command: npm start
+
+This avoids the "Root directory does not exist" error completely.
+
+This build contains the current DeadSectorWeb_v11 game including the larger theater-style map,
+zombie doorway/pathing changes, co-op weapons, two weapon slots, wall buys, three upgrade levels,
+and the reduced power-up drop system.

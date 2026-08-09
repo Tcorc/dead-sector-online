@@ -1,0 +1,16 @@
+{
+  "name": "deadsectorweb-v11",
+  "version": "11.31.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
